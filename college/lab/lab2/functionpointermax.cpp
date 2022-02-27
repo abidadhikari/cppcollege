@@ -2,15 +2,20 @@
 
 #include <iostream>
 using namespace std;
-int findMax(int arr[]){
-    int highest=0;
-    
+int findMax(int arr[],int size){
+    int highest=*arr;
+    for (int i = 0; i <size; i++)
+    {
+        if (*(arr+i)>highest)
+        {
+            highest=*(arr+i);
+        }
+    }
+    return highest;
 }
-
-int (*findMaxPtr)(int arr[]);
-
 int main(){
-    int n,values[100];
+    int n,values[100],(*ptrFunc)(int [],int);
+    
     cout<<"Enter a number of integers : ";
     cin>>n;
     cout<<"Enter "<<n<<" integer values : \n";
@@ -18,5 +23,7 @@ int main(){
     {
         cin>>values[i];
     }
+    ptrFunc=findMax;
+    cout<<"Largest integer is "<<ptrFunc(values,n)<<endl;
     return 0;
 }
