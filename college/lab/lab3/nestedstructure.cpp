@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-const int departmentNo=3,employeeNo=5;
+const int departmentNo=1,employeeNo=3;
 
 struct Employee{
     string name;

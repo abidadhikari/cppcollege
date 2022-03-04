@@ -11,7 +11,7 @@ int fact(int a)
 }
 int main()
 {
-    int n, sum = 0;
+    float n, sum = 0;
     cout << "Enter the Number of Terms : ";
     cin >> n;
     
@@ -19,11 +19,11 @@ int main()
     {
         if (i % 2 == 0)
         {
-            sum -= ((i * i) / fact(i));
+            sum -= ((float)(i * i) / fact(i));
         }
         else
         {
-            sum += ((i * i) / fact(i));
+            sum += ((float)(i * i) / fact(i));
         }
     }
     cout << "THe sum is : "<<sum;
