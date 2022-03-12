@@ -19,11 +19,11 @@ int main()
     {
         if (i % 2 == 0)
         {
-            sum -= ((float)(i * i) / fact(i));
+            sum -= (float)(i * i) / fact(i);
         }
         else
         {
-            sum += ((float)(i * i) / fact(i));
+            sum += (float)(i * i) / fact(i);
         }
     }
     cout << "THe sum is : "<<sum;
