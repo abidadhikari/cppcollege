@@ -82,6 +82,5 @@ int main(){
     c.displayCarData();
     b.displayBoatData();
     a.displayAeroplaneData();
-   
     return 0;
 }
