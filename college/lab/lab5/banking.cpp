@@ -23,7 +23,7 @@ public:
     void deposite(float x = 0)
     {
         balance += x;
-        cout << x << " amount has been deposite." << endl;
+        cout << x << " amount has been deposited." << endl;
         totalOperation++;
     }
 
@@ -48,7 +48,7 @@ public:
     }
     void displayTotalOperation()
     {
-        cout << "Total Operation : " << totalOperation<<endl;
+        cout << "Total Operation : " << totalOperation << endl;
     }
 };
 int Transaction::totalOperation;
@@ -63,12 +63,17 @@ int main()
         do
         {
             int a, amount;
+            cout << "1. Deposit " << endl
+                 << "2. Withdraw" << endl
+                 << "3. Display Balance" << endl
+                 << "4. Display Total Operations" << endl
+                 << "5. Exit" << endl;
             cout << "Enter Operation Code : ";
             cin >> a;
             switch (a)
             {
             case 1:
-                cout << "Deposite" << endl;
+                cout << "Deposit" << endl;
                 cout << "Enter amount :";
                 cin >> amount;
                 t[i].deposite(amount);
@@ -80,21 +85,21 @@ int main()
                 t[i].withdraw(amount);
                 break;
             case 3:
-                cout<<"Total Balance :"<<endl;
+                cout << "Total Balance :" << endl;
                 t[i].displayBalance();
                 break;
             case 4:
-                // cout<<"Total Operations :"<<endl;
                 t[i].displayTotalOperation();
                 break;
             case 5:
             default:
-                cout<<"Exited"<<endl;
-                active=0;
+                cout << "Exited" << endl;
+                active = 0;
                 break;
             }
         } while (active == 1);
-        cout<<endl<<"---------------------------------"<<endl;
+        cout << endl
+             << "---------------------------------" << endl;
     }
     return 0;
 }
