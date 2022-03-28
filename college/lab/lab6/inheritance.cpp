@@ -10,14 +10,14 @@ public:
     void getdata()
     {
         cout << "Enter your name : " << endl;
-        getline(cin>>ws,name);
+        getline(cin >> ws, name);
         cout << "Enter age : " << endl;
         cin >> age;
     }
     void displayData()
     {
-       cout<<"Name is "<<name<<endl;
-       cout<<"Age is "<<age<<endl;
+        cout << "Name is " << name << endl;
+        cout << "Age is " << age << endl;
     }
 };
 class author : private person
@@ -26,22 +26,21 @@ class author : private person
     string publishing_house;
 
 public:
-    void getDetails(){
+    void getDetails()
+    {
         getdata();
         cout << "Enter years of experience " << endl;
         cin >> years_of_experience;
         cout << "Enter name of publishing house " << endl;
-        getline(cin>>ws,publishing_house);
+        getline(cin >> ws, publishing_house);
     }
 
     void display_author_data()
     {
         displayData();
-        cout<<"Years of experience is "<<years_of_experience<<endl;
-        cout<<"Name of Publishing house is "<<publishing_house<<endl;
+        cout << "Years of experience is " << years_of_experience << endl;
+        cout << "Name of Publishing house is " << publishing_house << endl;
     }
-
-    
 };
 int main()
 {
