@@ -7,7 +7,7 @@
     PRINTER      SCANNER
         |          |
         |          |
-      PHOTOCOPY MACHINE
+      PHOTOCOPY-MACHINE
 */
 
 #include <iostream>
