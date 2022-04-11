@@ -42,3 +42,7 @@ int main()
     cout << "Student 2 " << ((std2.result == 'P') ? "PASSED" : "FAILED") << endl;
     return 0;
 }
+
+// OUTPUT 
+// Student 1 FAILED
+// Student 2 PASSED

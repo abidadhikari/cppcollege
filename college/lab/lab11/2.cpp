@@ -45,3 +45,13 @@ void Person::checkAge(Person p)
         cout << "Invalid Age (" << p.age << ")" << endl;
     }
 }
+
+// OUTPUT 
+// Enter age : -6
+// Invalid Age (-6)
+
+
+// Enter age : 20
+
+// --------Valid Age--------
+// Your age is 20

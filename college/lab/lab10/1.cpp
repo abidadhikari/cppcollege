@@ -22,3 +22,10 @@ int main()
     cout << "b is " << b<<endl<< "a is " << a<<endl;
     return 0;
 }
+
+
+// OUTPUT 
+// a is 97
+// a is D
+// b is 97
+// a is 8

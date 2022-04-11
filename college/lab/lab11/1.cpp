@@ -27,3 +27,8 @@ int main()
     checkAge(0);
     return 0;
 }
+
+// OUTPUT 
+// Your Age is 20
+// ERROR (Age can't be 0 or negative)
+// ERROR (Age can't be 0 or negative)
