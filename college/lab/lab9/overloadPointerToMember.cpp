@@ -15,7 +15,7 @@ class Person{
 };
 int main()
 {
-    Person p("abid adhikari");
+    Person p("Abid Adhikari");
     cout << p->name;
     return 0;
 }

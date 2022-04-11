@@ -23,7 +23,7 @@ A operator / (A a1, A a2){
 }
 
 int main(){
-    A a1(505),a2(10);
+    A a1(307),a2(13);
     A newA =(a1/a2);
     cout<<"New value is "<<newA.displayA();
     return 0;
