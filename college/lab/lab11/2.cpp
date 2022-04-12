@@ -3,7 +3,6 @@
 #include <iostream>
 using namespace std;
 
-void checkAge(int);
 class Person
 {
 
