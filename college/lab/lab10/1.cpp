@@ -17,7 +17,7 @@ int main()
     float b = 8.53;
     char c='a';
     swap(a,c);
-    cout << "a is " << a<<endl<< "a is " << c<<endl;
+    cout << "a is " << a<<endl<< "c is " << c<<endl;
     swap(b,a);
     cout << "b is " << b<<endl<< "a is " << a<<endl;
     return 0;
